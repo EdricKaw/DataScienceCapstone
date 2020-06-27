@@ -1,0 +1,42 @@
+---
+title: "Data Science Capstone -Ngram Prediction"
+author: "Edric Kaw"
+date: "6/27/2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Objectives
+
+The objective is to create an [application](https://edrickaw.shinyapps.io/ShinyNgram/) that can be used to predict next word based on your input.
+
+## Algorithms
+
+1. N-Gram model being adopted to predict next word based on user's input.
+2. Based on input words, algorithm searches through the corpora for most frequent combinations of words based on samples from three data sources: blogs, twitter and news.
+3. For the prediction, based on the most frequent combinations of words (highest probablity) will be output as the predicted words.
+4. There is a slider in the apps which will output the highest to lowest probability of combinations of words based on users to get the number of predicted words. 
+
+## R codes and Shiny Apps
+
+For more details on R codes please visit: 
+<https://github.com/EdricKaw/DataScienceCapstone>
+
+For the user interface application please visit:
+<https://edrickaw.shinyapps.io/ShinyNgram/> 
+
+
+## Usage of Application
+
+The **picture** below shows the user interface for the [application](https://edrickaw.shinyapps.io/ShinyNgram/) whereby user can enter input in the text box and can get numbers of predicted word through the slider. There are three tabs to show the prediction words through:
+
+- **Main** (List of prediction words)
+- **Table output** (Table output of prediction words)
+- **Word cloud** (Word cloud of prediction words)
+
+![](AppsPic.JPG)
+
+
